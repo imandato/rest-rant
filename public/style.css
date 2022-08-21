@@ -4,6 +4,38 @@ h1{
 }
 
 img {
-    width: 750px;
-    height: 525px;
+    width: 400px;
+    height: 325px;
+  
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.titleHome{
+    margin: 10px;
+}
+
+.placesBtn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.homeDivContain{
+    display: flex;
+    flex-direction: row;
+}
+
+.homeDiv{
+    margin: 10px;
 }
