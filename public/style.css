@@ -32,11 +32,6 @@ main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    margin: auto;
 }  
 
 h1{
