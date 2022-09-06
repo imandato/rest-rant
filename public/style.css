@@ -32,6 +32,7 @@ main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
+  
 }  
 
 h1{
@@ -47,6 +48,7 @@ img {
 
 h2{
     text-align: center;
+    color: lightblue;
 }
 
 .titleHome{
@@ -66,4 +68,23 @@ h2{
 
 .homeDiv{
     margin: 10px;
+}
+.showContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.showMain{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding: 10px;
+}
+.showImage{
+    padding: 10px;
+}
+
+.showContent{
+    padding: 10px;
 }
