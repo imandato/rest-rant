@@ -8,14 +8,16 @@ function show (data) {
             <div className='showContainer'>
               <div className='showMain'>
                 <div className='showImage'>
-                  <img src={data.place.pic} alt= "Image of Restaurant"/>
+                  <img src={data.place.pic} alt= {data.place.name}/>
+                  <div>Located in {data.place.city}, {data.place.state}</div>
                 </div>
                 <div className='showContent'> 
                   <h1> {data.place.name}</h1>
                   <h2>Rating</h2>
                   <div>Currently Unrated</div>
                   <h2>Description</h2>
-                  <div>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}</div>
+                  <div>{data.place.showEstablished()}</div>
+                  <div>Serving {data.place.cuisines}</div>
                   <div className='buttons'>
                     <a href={`/places/${data.id}/edit`} className='btn btn-warning'>Edit <i class="bi-pencil"></i></a>
                     <form method='POST' action={`/places/${data.id}?_method=DELETE`}>
