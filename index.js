@@ -1,6 +1,5 @@
 const express = require('express');
 const methodOverride = require('method-override');
-const mongoose = require('mongoose');
 
 // configuration
 require('dotenv').config();
@@ -15,12 +14,6 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
-
-// Database
-mongoose.connect(MONGO_URI, {
-  useNewUrlParser: true, 
-  useUnifiedTopology: true
-})
 
 
 // routes
