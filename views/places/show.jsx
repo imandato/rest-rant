@@ -63,7 +63,7 @@ function show (data) {
                       </div>
                       <div className='form-item'>
                         <label htmlFor="stars">Star Rating</label>
-                        <input className='form-control' type="number" step="0.5" name='stars' id='stars' />
+                        <input className='form-control' type="range" max="5" min="1" step="0.5" name='stars' id='stars' />
                       </div>
                       <div className='form-item'>
                         <label htmlFor="rant">Rant</label>
