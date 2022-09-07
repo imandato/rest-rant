@@ -17,9 +17,9 @@ function show (data) {
                   <h2>Description</h2>
                   <div>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}</div>
                   <div className='buttons'>
-                    <a href={`/places/${data.id}/edit`} className='btn btn-warning'>Edit</a>
+                    <a href={`/places/${data.id}/edit`} className='btn btn-warning'>Edit <i class="bi-pencil"></i></a>
                     <form method='POST' action={`/places/${data.id}?_method=DELETE`}>
-                      <button type='submit' className='btn btn-danger'>Delete</button>
+                      <button type='submit' className='btn btn-danger'>Delete <i class="bi-trash"></i> </button>
                     </form>
                   </div>
                 </div>

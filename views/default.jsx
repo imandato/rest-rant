@@ -6,6 +6,7 @@ function Def (html) {
             <head>
                 <title>Title</title>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></link>
                 <link rel="stylesheet" href="/style.css" />
             </head>
             <body>
@@ -24,6 +25,7 @@ function Def (html) {
                 </nav>
                 {html.children}
             </body>
+            <footer class="sticky-bottom" >Website Built by Ivelisse Mandato</footer>
         </html>
     )
 }

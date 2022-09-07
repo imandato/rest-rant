@@ -1,5 +1,5 @@
 nav {
-    background-color: cornflowerblue;
+    background-color: indigo;
     padding: 10px;
 }
 
@@ -24,7 +24,7 @@ nav a:hover {
 }
 
 body {
-    background-color: lightblue;
+    background-color: lavender;
     text-align: center;
 }
   
@@ -37,7 +37,7 @@ main {
 
 h1{
     text-align: center;
-    color: cornflowerblue;
+    color: indigo;
 }
 
 img {
@@ -48,7 +48,7 @@ img {
 
 h2{
     text-align: center;
-    color: lightblue;
+    color: darkslateblue;
 }
 
 .titleHome{
@@ -89,3 +89,6 @@ h2{
     padding: 10px;
 }
 
+footer{
+    background-color: lavender;
+}
