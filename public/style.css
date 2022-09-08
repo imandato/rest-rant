@@ -111,3 +111,9 @@ footer{
 .form-item{
     padding: 10px;
 }
+
+.comments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

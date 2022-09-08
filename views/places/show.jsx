@@ -7,7 +7,21 @@ function show (data) {
         No comments yet!
       </h3>
     )
+    let rating = (
+      <h3 className='inactive'>
+        No rating yet!
+      </h3>
+    )
     if (data.place.comments.length) {
+      let sumRatings = data.place.comments.reduce((tot, c) => {
+        return tot + c.stars
+      }, 0)
+      let averageRating = sumRatings / data.place.comments.length
+      rating = (
+        <h3>
+          {Math.round(averageRating)} stars
+        </h3>
+      )
       comments = data.place.comments.map(c => {
         return (
           <div className="border">
@@ -33,7 +47,7 @@ function show (data) {
                 <div className='showContent'> 
                   <h1> {data.place.name}</h1>
                   <h2>Rating</h2>
-                  <div>Currently Unrated</div>
+                  <div>{rating}</div>
                   <h2>Description</h2>
                   <div>{data.place.showEstablished()}</div>
                   <div>Serving {data.place.cuisines}</div>
@@ -45,9 +59,11 @@ function show (data) {
                   </div>
                 </div>
               </div>
-              <div>
+              <div >
                 <h2>Comments</h2>
-                {comments}
+                <div className='comments'>
+                  {comments}
+                </div>
                 <hr />
                 <h2>Leave a comment!</h2>
                 <form action={`/places/${data.place.id}/comment`} method="POST">
@@ -83,8 +99,3 @@ function show (data) {
 }
 
 module.exports = show
-
-
-
- 
-
